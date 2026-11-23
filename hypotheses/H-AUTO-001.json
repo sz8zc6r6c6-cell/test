@@ -1,13 +1,18 @@
 {
   "id": "H-AUTO-001",
   "source_of_truth": "notion",
-  "purpose": "Test automatic Notion-to-Fibery propagation",
-  "target_latency_seconds": 120,
-  "acceptance": [
-    "create_card",
-    "update_same_card",
-    "no_duplicate_on_retry",
-    "link_git_evidence"
+  "purpose": "Automatic Notion-to-Fibery live graph",
+  "native_sync_interval_seconds": 3600,
+  "map_poll_interval_seconds": 15,
+  "original_target_latency_seconds": 120,
+  "original_latency_target_met": false,
+  "verified": [
+    "status_change_same_entity",
+    "new_entity_from_notion",
+    "new_node_from_live_query",
+    "parent_edge_from_notion_field",
+    "repeat_sync_without_duplicate"
   ],
-  "end_to_end_verified": false
+  "acceptance_trigger": "manual Sync of configured native connector",
+  "unattended_hourly_tick_observed": false
 }
