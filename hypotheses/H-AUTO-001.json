@@ -1,0 +1,13 @@
+{
+  "id": "H-AUTO-001",
+  "source_of_truth": "notion",
+  "purpose": "Test automatic Notion-to-Fibery propagation",
+  "target_latency_seconds": 120,
+  "acceptance": [
+    "create_card",
+    "update_same_card",
+    "no_duplicate_on_retry",
+    "link_git_evidence"
+  ],
+  "end_to_end_verified": false
+}
