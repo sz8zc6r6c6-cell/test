@@ -1,0 +1,18 @@
+{
+  "id": "H-AUTO-001",
+  "source_of_truth": "notion",
+  "purpose": "Automatic Notion-to-Fibery live graph",
+  "native_sync_interval_seconds": 3600,
+  "map_poll_interval_seconds": 15,
+  "original_target_latency_seconds": 120,
+  "original_latency_target_met": false,
+  "verified": [
+    "status_change_same_entity",
+    "new_entity_from_notion",
+    "new_node_from_live_query",
+    "parent_edge_from_notion_field",
+    "repeat_sync_without_duplicate"
+  ],
+  "acceptance_trigger": "manual Sync of configured native connector",
+  "unattended_hourly_tick_observed": false
+}
